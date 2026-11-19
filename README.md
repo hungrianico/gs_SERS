@@ -25,9 +25,9 @@ O projeto beneficiaria membros de uma comunidade ou bairro com uma horta com irr
 ## Condições de funcionamento da solução:
 Para o funcionamento da solução precisamos de  
   1. Um microcontrolador ESP-WROOM-32
-  2. Um ESP 32 com processador Xtensa Dual-Core 32 bits com clock ajustavel entre 80MHz até 240MHz; memória RAM estática de 520KB; memória Flash de 4MB; integração Wi-Fi
-  3. Sensores capacitivos de saída analógica específicos para medição de umidade v1.2
-  4. Um sensor ultrassônico AJ-SR04M
+  2. Um sensor ultrassônico AJ-SR04M
+  3. Sensor capacitivo de umidade do solo V1.2
+  4. Painel solar Ztroon ZTP-010MI
 
      [provavelmente vou ter q voltar aq depois]
 
