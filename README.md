@@ -1,19 +1,14 @@
 # gs_SERS
 
-[]adicionar identificação dos integrantes, descrição do problema e da solução;
-[]Dados utilizados e respectivas fontes;  
-[]Estimativas de consumo e cálculos;  
+
 []Comparação fundamentada das alternativas;  
 []Diagrama conceitual de funcionamento;  
-[]Indicadores energéticos e ambientais;  
 []Código ou componentes desenvolvidos para integração ao dashboard;  
 []Referências e limitações da proposta.  
-[]Caso seja utilizado um repositório compartilhado com outras disciplinas, a contribuição de SERS  
-[x]deverá estar claramente identificado O espaço comunitário escolhido e o problema identificado;  
 []A análise energética e a comparação das alternativas;  
 []O diagrama conceitual da solução;  
 []A demonstração dos indicadores no dashboard;  
-[-]Os benefícios esperados e as limitações da proposta.  
+
 
 # Diagnóstico do problema
 ## Espaço escolhido: Jardim ou horta comunitária
@@ -78,3 +73,10 @@ sobre os benefícios ambientais e comunitários.
 GLOBAL SOLUTION 2026.2 | SERS | CIÊNCIA DA COMPUTAÇÃO 4
 Não basta apresentar um dashboard genérico: os indicadores deverão corresponder à análise
 energética efetivamente desenvolvida
+
+
+fontes:  
+- https://www.bitmaker.com.br/esp32-wifi-e-bluetooth-esp-wroom-32.html
+- https://www.smartkits.com.br/sensor-capacitivo-de-umidade-do-solo?parceiro=9390
+- https://www.fornell.com.br/produtos/sensor-ultrassonico-aj-sr04m-a-prova-de-agua/
+- https://www.mercadolivre.com.br/painel-solar-10w-ztroon-monocristalino-ztp-010mi-azul-escuro-1000v-2472v/p/MLB74596095?pdp_filters=item_id%3AMLB7674420940&from=gshop&matt_tool=34755848&matt_word=&matt_source=google&matt_campaign_id=22090354298&matt_ad_group_id=173090578756&matt_match_type=&matt_network=g&matt_device=c&matt_creative=727882731306&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735128188&matt_product_id=MLB74596095-product&matt_product_partition_id=2494755919328&matt_target_id=pla-2494755919328&cq_src=google_ads&cq_cmp=22090354298&cq_net=g&cq_plt=gp&cq_med=pla
