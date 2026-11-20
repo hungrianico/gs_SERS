@@ -80,3 +80,7 @@ fontes:
 - https://www.smartkits.com.br/sensor-capacitivo-de-umidade-do-solo?parceiro=9390
 - https://www.fornell.com.br/produtos/sensor-ultrassonico-aj-sr04m-a-prova-de-agua/
 - https://www.mercadolivre.com.br/painel-solar-10w-ztroon-monocristalino-ztp-010mi-azul-escuro-1000v-2472v/p/MLB74596095?pdp_filters=item_id%3AMLB7674420940&from=gshop&matt_tool=34755848&matt_word=&matt_source=google&matt_campaign_id=22090354298&matt_ad_group_id=173090578756&matt_match_type=&matt_network=g&matt_device=c&matt_creative=727882731306&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735128188&matt_product_id=MLB74596095-product&matt_product_partition_id=2494755919328&matt_target_id=pla-2494755919328&cq_src=google_ads&cq_cmp=22090354298&cq_net=g&cq_plt=gp&cq_med=pla
+- https://m.magazineluiza.com.br/busca/modulo+lm2596/
+- https://www.magazineluiza.com.br/busca/fonte+12v+2amp/
+- https://monitordomercado.com.br/noticias/410146-quanto-custa-trocar-o-padrao-de-entrada-de-energia-para-suportar-os-novos-aparelhos-da-casa/
+- 
