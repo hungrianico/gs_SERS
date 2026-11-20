@@ -19,34 +19,21 @@ Para o funcionamento da solução precisamos de
   2. Um sensor ultrassônico AJ-SR04M
   3. Sensor capacitivo de umidade do solo V1.2
   4. Painel solar Ztroon ZTP-010MI
-
-     [provavelmente vou ter q voltar aq depois]
+Além disso, nós não consideramos perdas de fonte nem de conversão de tensão, e usamos um valor simulado de 4 horas de sol pleno por dia, com um cenário de 3 horas para uma análise conservadora.
 
 ## Benefícios esperados para a comunidade
 Os moradores do local teriam acesso a horta comunitária onde podem realizar seu plantio e compartilhar recursos um com os outros de forma acessivel, já que a irrigação é adequada a cada tipo de planta e sustentável, já que a irrigação inteligente previne o desperdicio de água
 
 # Análise do consumo energético
-[Deverá ser apresentada uma estimativa fundamentada do consumo energético associado ao
-problema. Os dados poderão ser reais, obtidos em fontes públicas, ou estimados mediante
-premissas justificadas.
-Para equipamentos elétricos, poderá ser utilizada a expressão: E = (P × t) / 1000, em que E é a
-energia consumida (kWh), P é a potência (W) e t é o tempo de funcionamento (h).
-Quando houver vários equipamentos, o consumo total deverá considerar a quantidade e o período
-de utilização de cada um. As equipes deverão explicitar as unidades, os períodos de referência e as
-premissas utilizadas.]
+Estimamos o consumo do sistema com a fórmula E = (P × t) / 1000, considerando funcionamento contínuo de 24 h por dia, a corrente típica informada pelos fabricantes de cada componente e sem perdas de fonte, de conversão de tensão ou do sistema solar. O ESP-WROOM-32, o sensor capacitivo de umidade do solo V1.2 e o sensor ultrassônico AJ-SR04M somam 0,4665 W, o que dá cerca de 11,2 Wh por dia, ou 0,336 kWh por mês. Para a alimentação, dimensionamos um painel solar de 10 W (Ztroon ZTP-010MI), que gera de 30 a 40 Wh por dia com 3 a 4 horas de sol pleno (valor simulado), e 4 baterias 18650 em paralelo, que garantem 2 dias de autonomia sem sol.
+
+Para os cálculos completos, as premissas e o dimensionamento solar, veja o arquivo original: [consumo_energetico.md](consumo_energetico.md).
+
 # Comparação de alternativas
-[Deverão ser comparadas pelo menos duas alternativas de fornecimento ou economia de energia,
-sendo obrigatória a inclusão de uma fonte renovável. A comparação deverá considerar:
-• Consumo energético e potencial de economia;
-• Custos estimados de implantação e operação;
-GLOBAL SOLUTION 2026.2 | SERS | CIÊNCIA DA COMPUTAÇÃO 3
-• Viabilidade técnica e condições necessárias;
-• Impactos ambientais;
-• Benefícios e limitações de cada alternativa.
-As alternativas deverão ser comparadas para a mesma necessidade energética e um período de
-referência comum. Não será necessário elaborar um projeto executivo de engenharia ou apresentar
-um orçamento comercial completo. Entretanto, os valores e as estimativas utilizados deverão ter
-fundamentação]
+Comparamos duas alternativas para a mesma necessidade energética (0,336 kWh/mês, período de referência de 30 dias): energia solar e rede elétrica. Como hortas comunitárias geralmente não têm ponto de energia, a rede exigiria uma nova ligação, com custo de implantação estimado entre R$ 1.855,86 e R$ 3.055,86 e custo de disponibilidade de cerca de R$ 36,30 por mês. A energia solar tem custo inicial estimado de R$ 250,17 e praticamente nenhum custo de operação, além de funcionar sem tomada, manter o sistema ativo em quedas de energia e estar alinhada ao objetivo de sustentabilidade. Por isso, a solar foi a alternativa escolhida.
+
+Para a tabela completa de critérios e a análise detalhada, veja o arquivo original: [comparacao.md](comparacao.md).
+
 # Diagramação da solução
 [A equipe deverá apresentar um diagrama de blocos que represente conceitualmente o
 funcionamento da solução proposta. O diagrama deverá relacionar, conforme o projeto:
@@ -79,4 +66,3 @@ fontes:
 - https://m.magazineluiza.com.br/busca/modulo+lm2596/
 - https://www.magazineluiza.com.br/busca/fonte+12v+2amp/
 - https://monitordomercado.com.br/noticias/410146-quanto-custa-trocar-o-padrao-de-entrada-de-energia-para-suportar-os-novos-aparelhos-da-casa/
-- 
