@@ -1,13 +1,9 @@
 # gs_SERS
 
 
-[]Comparação fundamentada das alternativas;  
 []Diagrama conceitual de funcionamento;  
 []Código ou componentes desenvolvidos para integração ao dashboard;  
-[]Referências e limitações da proposta.  
-[]A análise energética e a comparação das alternativas;  
 []O diagrama conceitual da solução;  
-[]A demonstração dos indicadores no dashboard;  
 
 
 # Diagnóstico do problema
