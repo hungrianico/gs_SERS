@@ -7,7 +7,7 @@ RM 575140: **Hilda Bonnibel de Oliveira Sousa Dias**
 
 # Diagnóstico do problema
 ## Espaço escolhido: Jardim ou horta comunitária
-Escolhemos esse espaço porque conseguimos levantar uma solução energética sustentavel com base em uma arquitetura já elaborada para a entrega de **Arquitetura e Organização de Computadores** que consiste em sensores capacitivos que fazem uma leitura elétrica do solo, permitindo um calculo percentual da umidade volumétrica do plantio. 
+Escolhemos esse espaço porque conseguimos levantar uma solução energética sustentavel com base em uma arquitetura já elaborada para a entrega de [Arquitetura e Organização de Computadores](GS_COA_01.pdf) que consiste em sensores capacitivos que fazem uma leitura elétrica do solo, permitindo um calculo percentual da umidade volumétrica do plantio. 
 
 ## Público beneficiado:
 O projeto beneficiaria membros de uma comunidade ou bairro com uma horta com irrigação inteligente e energéticamente eficiente e sustentavel.
