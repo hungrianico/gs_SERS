@@ -1,4 +1,10 @@
 # Global Solution Soluções em Energias Renováveis e Sustentáveis (SERS)
+1CCPB  
+
+RM 576186: **Matheus Regis Kabakian Albano**  
+RM 574606: **Nico Hungria Santos**  
+RM 575140: **Hilda Bonnibel de Oliveira Sousa Dias**  
+
 # Diagnóstico do problema
 ## Espaço escolhido: Jardim ou horta comunitária
 Escolhemos esse espaço porque conseguimos levantar uma solução energética sustentavel com base em uma arquitetura já elaborada para a entrega de **Arquitetura e Organização de Computadores** que consiste em sensores capacitivos que fazem uma leitura elétrica do solo, permitindo um calculo percentual da umidade volumétrica do plantio. 
