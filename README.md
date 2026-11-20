@@ -1,11 +1,4 @@
-# gs_SERS
-
-
-[]Diagrama conceitual de funcionamento;  
-[]Código ou componentes desenvolvidos para integração ao dashboard;  
-[]O diagrama conceitual da solução;  
-
-
+# Global Solution Soluções em Energias Renováveis e Sustentáveis (SERS)
 # Diagnóstico do problema
 ## Espaço escolhido: Jardim ou horta comunitária
 Escolhemos esse espaço porque conseguimos levantar uma solução energética sustentavel com base em uma arquitetura já elaborada para a entrega de **Arquitetura e Organização de Computadores** que consiste em sensores capacitivos que fazem uma leitura elétrica do solo, permitindo um calculo percentual da umidade volumétrica do plantio. 
@@ -19,6 +12,7 @@ Para o funcionamento da solução precisamos de
   2. Um sensor ultrassônico AJ-SR04M
   3. Sensor capacitivo de umidade do solo V1.2
   4. Painel solar Ztroon ZTP-010MI
+
 Além disso, nós não consideramos perdas de fonte nem de conversão de tensão, e usamos um valor simulado de 4 horas de sol pleno por dia, com um cenário de 3 horas para uma análise conservadora.
 
 ## Benefícios esperados para a comunidade
@@ -35,28 +29,24 @@ Comparamos duas alternativas para a mesma necessidade energética (0,336 kWh/mê
 Para a tabela completa de critérios e a análise detalhada, veja o arquivo original: [comparacao.md](comparacao.md).
 
 # Diagramação da solução
-[A equipe deverá apresentar um diagrama de blocos que represente conceitualmente o
-funcionamento da solução proposta. O diagrama deverá relacionar, conforme o projeto:
-• Fonte de energia;
-• Equipamentos consumidores;
-• Sensores ou dados de consumo;
-• Lógica de monitoramento ou automação;
-• Processamento das informações;
-• Indicadores apresentados no dashboard.
-O objetivo é demonstrar como os componentes se relacionam, sem exigir a construção de circuitos
-eletrônicos ou equipamentos físicos.]
+O diagrama de blocos mostra como os componentes se relacionam. A **alimentação** é solar: o painel carrega as baterias 18650 por meio do controlador MPPT, e as baterias alimentam os reguladores de 3,3 V e 5 V. Na **entrada**, os sensores capacitivos de umidade do solo (sinal analógico) e o sensor ultrassônico, que mede a reserva de água (pulso echo), fazem as medições. Na **conversão**, o ADC ADS1115 transforma o sinal analógico em digital pelo barramento I²C, e um divisor de tensão reduz o sinal echo de 5 V para 3,3 V, protegendo o **microcontrolador** ESP-WROOM-32. Nele, a SRAM guarda as últimas leituras, a Flash guarda o firmware e os parâmetros de calibragem, e o algoritmo usa as últimas 10 leituras para estimar a tendência da umidade e indicar se a plantação deve ser irrigada. Na **saída**, LEDs acionados por GPIO indicam a tendência da umidade (verde para subir, amarelo para estável e vermelho para cair) e se deve irrigar. Na **IoT**, o Wi-Fi envia os dados por MQTT ao dashboard de monitoramento e recebe de uma API meteorológica os dados que ajudam a prever a chuva e ajustar o algoritmo.
+
+![Diagrama de blocos da solução](diagrama_solucao_solar.png)
+
+Para ver o diagrama em tamanho maior ou editá-lo, veja os arquivos originais: [diagrama_solucao_solar.png](diagrama_solucao_solar.png).
+
 # Indicadores de eficiência e sustentabilidade
+Os indicadores abaixo foram definidos a partir dos cálculos e das premissas da análise energética (consumo contínuo de 24 h, HSP simulado de 3 a 4 h e sem perdas), e comparam a solução solar com a alternativa da rede elétrica com nova ligação.
 
-# Integração ao Neighborhood Action Dashboard
-A contribuição da disciplina deverá ser incorporada ao projeto integrador. O dashboard deverá
-permitir visualizar os indicadores energéticos definidos pela equipe, utilizando dados reais,
-estimados ou simulados.
-A implementação poderá incluir gráficos, tabelas, comparações entre alternativas e informações
-sobre os benefícios ambientais e comunitários.
-GLOBAL SOLUTION 2026.2 | SERS | CIÊNCIA DA COMPUTAÇÃO 4
-Não basta apresentar um dashboard genérico: os indicadores deverão corresponder à análise
-energética efetivamente desenvolvida
+| Indicador | Valor | Unidade | Base de cálculo |
+|---|:---:|:---:|---|
+| Consumo de energia | 0,336 | kWh/mês | 11,196 Wh/dia × 30 dias |
+| Economia energética estimada | 0,336 (100% do consumo) | kWh/mês ou % | Energia que deixa de ser consumida da rede, já que o sistema funciona com energia solar |
+| Participação de energia renovável | 100 | % | Geração de 30 a 40 Wh/dia contra consumo de 11,196 Wh/dia (de 2,68 a 3,57 vezes o consumo) |
+| Redução estimada de custos (operação) | 36,30 (cerca de 435 por ano) | R$/mês | Custo de disponibilidade da rede (30 kWh × R$ 1,21/kWh), desconsiderando os centavos do consumo real |
+| Economia estimada na implantação | 1.605,69 a 2.805,69 | R$ (valor único) | Rede (R$ 1.855,86 a R$ 3.055,86) menos solar (R$ 250,17) |
 
+Esses valores valem dentro das premissas adotadas. Para os cálculos e as fontes dos valores, veja [consumo_energetico.md](consumo_energetico.md) e [comparacao.md](comparacao.md).
 
 fontes:  
 - https://www.bitmaker.com.br/esp32-wifi-e-bluetooth-esp-wroom-32.html
